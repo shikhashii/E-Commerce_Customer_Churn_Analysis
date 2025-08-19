@@ -7,13 +7,11 @@ The project includes:
 - **SQL Queries**: Data cleaning, exploration, and analysis
 - **Churn Insights**: Key findings with churn rates across different dimensions
 - **Business Recommendations**: Practical steps to improve customer retention
-- **Visuals (PPT/Dashboard)**: Easy-to-understand presentation of insights
-
 ---
 
 ## 🗂 Dataset
-- **Source**: E-commerce churn dataset (simulated/Kaggle-style)
-- **Size**: 4,293 customers  
+- **Source**: E-commerce churn dataset (Kaggle)
+- **Size**: 5,500+ customers  
 - **Key Columns**:  
   - `CustomerID` – Unique identifier  
   - `City_Tier` – Tier 1 / Tier 2 / Tier 3  
