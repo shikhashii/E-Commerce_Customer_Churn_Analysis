@@ -1,4 +1,4 @@
-# 📊 Customer Churn Analysis – SQL Project
+# 📊 E-Commerce Customer Churn Analysis – SQL Project
 
 ## 📌 Project Overview
 Customer churn is a critical challenge for e-commerce and subscription-based businesses. This project analyzes customer churn data using SQL to uncover patterns, identify at-risk customer segments, and provide actionable recommendations for reducing churn.
