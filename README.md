@@ -1,6 +1,6 @@
-# 📊 E-Commerce Customer Churn Analysis – SQL Project
+# E-Commerce Customer Churn Analysis
 
-## 📌 Project Overview
+## Project Overview
 Customer churn is a critical challenge for e-commerce and subscription-based businesses. This project analyzes customer churn data using SQL to uncover patterns, identify at-risk customer segments, and provide actionable recommendations for reducing churn.
 
 The project includes:
@@ -9,7 +9,7 @@ The project includes:
 - **Business Recommendations**: Practical steps to improve customer retention
 ---
 
-## 🗂 Dataset
+## Dataset
 - **Source**: E-commerce churn dataset (Kaggle)
 - **Size**: 5,500+ customers  
 - **Key Columns**:  
@@ -26,7 +26,7 @@ The project includes:
 
 ---
 
-## 🔍 SQL Analysis
+## SQL Analysis
 The SQL workflow includes:
 1. **Data Cleaning**  
    - Handling null values, duplicates, and inconsistent entries
@@ -40,7 +40,7 @@ The SQL workflow includes:
 
 ---
 
-## 📈 Key Insights
+## Key Insights
 - **Overall Churn**: 770 of 4,293 customers → **17.94%**  
 - **City Tier**: Tier 3 (22.39%) & Tier 2 (21.74%) churn higher than Tier 1 (15.49%)  
 - **Payment Mode**: COD (24.20%) & E-Wallet (23.48%) highest; Credit Card lowest (15.08%)  
@@ -53,11 +53,11 @@ The SQL workflow includes:
 
 ---
 
-## 💡 Recommendations
-- 🎯 Focus retention campaigns on **Tier 2 & Tier 3 customers**  
-- 💳 Encourage shift from **COD/E-Wallet to Credit Card** with cashback offers  
-- 🛠️ Investigate why **high-satisfaction customers still churn**  
-- 📞 Improve **complaint resolution process** to reduce churn risk  
-- 🚀 Offer **loyalty benefits for high-value categories** (Mobile Phones, Fashion)  
+##  Recommendations
+- Focus retention campaigns on **Tier 2 & Tier 3 customers**  
+- Encourage shift from **COD/E-Wallet to Credit Card** with cashback offers  
+- Investigate why **high-satisfaction customers still churn**  
+- Improve **complaint resolution process** to reduce churn risk  
+- Offer **loyalty benefits for high-value categories** (Mobile Phones, Fashion)  
 
 ---
