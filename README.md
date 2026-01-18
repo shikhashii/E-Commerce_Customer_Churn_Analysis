@@ -130,10 +130,7 @@ This project demonstrates how SQL can be used effectively for:
 - Exploratory analytics  
 - Customer segmentation  
 - Risk modeling  
-- Business decision-making  
+- Business decision-making
 
-The analysis provides practical, data-driven insights that can help organizations reduce churn and improve customer lifetime value.
 
 ---
-
-### ⭐ If you find this project useful, feel free to star the repository!
