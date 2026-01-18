@@ -1,63 +1,139 @@
-# E-Commerce Customer Churn Analysis
+# Customer Churn Analysis using SQL
 
-## Project Overview
-Customer churn is a critical challenge for e-commerce and subscription-based businesses. This project analyzes customer churn data using SQL to uncover patterns, identify at-risk customer segments, and provide actionable recommendations for reducing churn.
+## 📌 Project Overview
+This project focuses on analyzing customer churn for an e-commerce platform using SQL. The objective is to identify churn patterns, uncover key drivers of customer attrition, and generate actionable business insights to improve customer retention.
 
-The project includes:
-- **SQL Queries**: Data cleaning, exploration, and analysis
-- **Churn Insights**: Key findings with churn rates across different dimensions
-- **Business Recommendations**: Practical steps to improve customer retention
----
-
-## Dataset
-- **Source**: E-commerce churn dataset (Kaggle)
-- **Size**: 5,500+ customers  
-- **Key Columns**:  
-  - `CustomerID` – Unique identifier  
-  - `City_Tier` – Tier 1 / Tier 2 / Tier 3  
-  - `Payment_Mode` – COD, Credit Card, E-Wallet, etc.  
-  - `Satisfaction_Score` – 1–5 rating  
-  - `Complaints` – Whether customer raised complaints  
-  - `App_Usage_Hours` – Daily usage in hours  
-  - `Login_Device` – Phone, Computer, Mobile App  
-  - `Order_Category` – Mobile Phones, Fashion, Grocery, etc.  
-  - `Cashback_Amount` – Cashback received  
-  - `Churn` – 1 = Churned, 0 = Retained  
+The analysis is performed on a customer-level dataset and follows a structured approach including data cleaning, exploratory analysis, advanced analytics, and business recommendations.
 
 ---
 
-## SQL Analysis
-The SQL workflow includes:
-1. **Data Cleaning**  
-   - Handling null values, duplicates, and inconsistent entries
-2. **Exploratory Data Analysis (EDA)**  
-   - Distribution of churn vs non-churn  
-   - Segmentation by demographics & behavior  
-3. **Churn Analysis Queries**  
-   - Churn rate by City Tier, Payment Mode, Device, and Order Category  
-   - Impact of complaints, cashback, and satisfaction on churn  
-   - Identification of high-risk customer groups  
+## 🎯 Business Objectives
+
+The project aims to answer the following key business questions:
+
+1. What is the overall churn rate of the platform?
+2. Which customer behaviors indicate higher churn risk?
+3. How do factors like payment mode, satisfaction score, and app usage impact churn?
+4. Which high-value customers are at risk of leaving?
+5. What strategic actions can help reduce churn?
 
 ---
 
-## Key Insights
-- **Overall Churn**: 770 of 4,293 customers → **17.94%**  
-- **City Tier**: Tier 3 (22.39%) & Tier 2 (21.74%) churn higher than Tier 1 (15.49%)  
-- **Payment Mode**: COD (24.20%) & E-Wallet (23.48%) highest; Credit Card lowest (15.08%)  
-- **Satisfaction**: High scorers churn more (25.35%) than low scorers (12.35%)  
-- **Complaints**: Customers with complaints churn **3× more** (33.58% vs 11.84%)  
-- **App Usage**: Medium users churn most (18.07%)  
-- **Device**: Phone (21.21%) > Computer (20.66%) > Mobile App (14.42%)  
-- **Order Category**: Mobile Phones churn highest (26.44%); Grocery lowest  
-- **Cashback**: Medium cashback churn highest (17.99%)  
+## 🗂 Dataset Description
+
+The dataset contains customer-related attributes such as:
+
+- Customer demographics  
+- Transactional behavior  
+- App usage patterns  
+- Satisfaction scores  
+- Complaints  
+- Order history  
+- Cashback details  
+- Churn status  
+
+Each record represents a unique customer along with various behavioral and engagement metrics.
 
 ---
 
-##  Recommendations
-- Focus retention campaigns on **Tier 2 & Tier 3 customers**  
-- Encourage shift from **COD/E-Wallet to Credit Card** with cashback offers  
-- Investigate why **high-satisfaction customers still churn**  
-- Improve **complaint resolution process** to reduce churn risk  
-- Offer **loyalty benefits for high-value categories** (Mobile Phones, Fashion)  
+## 🛠 Tools & Technologies Used
+
+- **SQL (MySQL)** for data processing and analysis  
+- Relational database concepts  
+- Window functions  
+- Common Table Expressions (CTEs)  
+- Data cleaning and transformation techniques  
 
 ---
+
+## 🔄 Project Workflow
+
+The project follows a structured analytics pipeline:
+
+### 1. Database Setup & Exploration
+- Creation of database and tables  
+- Initial data inspection  
+- Creation of working copy for analysis  
+
+### 2. Data Cleaning & Preparation
+- Duplicate record detection and removal  
+- Standardization of categorical values  
+- Handling missing values  
+- Data validation and transformation  
+
+### 3. Exploratory Data Analysis (EDA)
+Key analyses performed include:
+
+- Overall churn rate calculation  
+- Churn by payment mode  
+- Churn by satisfaction score  
+- Impact of customer complaints  
+- App usage vs churn  
+- Cashback-based churn trends  
+
+These analyses helped in understanding general patterns and customer behavior.
+
+### 4. Advanced Analytics
+
+To derive deeper insights, advanced SQL analytics were implemented:
+
+- **Tenure-Based Customer Segmentation**  
+  Customers were categorized into New, Growing, and Loyal segments to evaluate churn trends.
+
+- **SQL-Based Churn Risk Scoring Model**  
+  A risk score was developed using factors like:
+  - Inactivity  
+  - Complaints  
+  - Low satisfaction  
+  - Low order frequency  
+
+- **High-Value Customer Identification**  
+  Detection of high-value customers who are at risk of churning based on order count and inactivity.
+
+- **Churn Driver Analysis**  
+  Analysis of how payment modes and other behavioral factors influence churn probability.
+
+- **Consolidated Churn Drivers Summary**  
+  Aggregated view of the most impactful churn indicators.
+
+---
+
+## 📊 Key Insights
+
+From the analysis, the following patterns were observed:
+
+- Customers with **complaints and low satisfaction scores** show significantly higher churn rates.  
+- Inactive customers (no recent orders) are more likely to churn.  
+- Certain payment methods are associated with better retention.  
+- Low app engagement strongly correlates with churn behavior.  
+- High-value customers with declining activity form a critical risk group.
+
+---
+
+## 💡 Business Recommendations
+
+Based on the findings, the following actions are suggested:
+
+1. Strengthen customer support to quickly resolve complaints.  
+2. Introduce loyalty programs targeting inactive customers.  
+3. Encourage digital payment methods with incentives.  
+4. Run feedback and engagement campaigns for low-satisfaction users.  
+5. Monitor high-value customers and implement proactive retention strategies.
+
+---
+
+## 🚀 Conclusion
+
+This project demonstrates how SQL can be used effectively for:
+
+- End-to-end data cleaning  
+- Exploratory analytics  
+- Customer segmentation  
+- Risk modeling  
+- Business decision-making  
+
+The analysis provides practical, data-driven insights that can help organizations reduce churn and improve customer lifetime value.
+
+---
+
+### ⭐ If you find this project useful, feel free to star the repository!
