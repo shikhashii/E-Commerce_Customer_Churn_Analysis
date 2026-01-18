@@ -132,5 +132,4 @@ This project demonstrates how SQL can be used effectively for:
 - Risk modeling  
 - Business decision-making
 
-
 ---
